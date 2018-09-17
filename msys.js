@@ -46,13 +46,14 @@ else
 		// t is verification token
 		// d is the message
 		// g is game
-		// u is user id or underscore separated list of users for broadcast
+		// u is user id
+		// m is for muliple user id's which is an underscore separated list of users for broadcast
 		// c is command which can be:
 		// 	- s command is set data
 		// 	- g command is get data
 		// Example usage for localhost
-		//http://localhost:8001/msg?t=<add your token>&game1=a&u=1234&c=s&d=message1
-		//http://localhost:8001/msg?t=<add your token>&game1=a&u=1234&c=g
+		//http://localhost:8000/msg?t=<add your token>&game1=a&u=1234&c=s&d=message1
+		//http://localhost:8000/msg?t=<add your token>&game1=a&u=1234&c=g
 		
 		var token = request.query["t"];		// token
 		var game = request.query["g"];		// game_id
